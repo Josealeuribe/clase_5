@@ -1,0 +1,77 @@
+/* Selector universal*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector de etiqurta*/
+header, footer {
+    background-color: bisque;
+}
+
+/* Selectores descendentes */
+
+article p span {
+    font-size:small;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Selector de clase */
+.miclase{
+    background-color: bisque;
+    color: aliceblue;
+}
+
+/* Selector tipo id */
+#menu{
+    background-color: aqua;
+}
+
+/*Selector adyacente*/
+h1+p{
+    text-decoration: underline;
+}
+
+#mip {
+    text-decoration: none;
+}
+
+/*Selector pseudocodigo*/
+.mia:hover {
+    background-color: yellow;
+    color: yellow;
+}
+
+.mia:visted, .mib:link {
+    background-color: violet;
+    color: yellow;
+}
+
+img:hover {
+    opacity: 0;
+}
+
+.mia:hover.miclase:before {
+    content: url(/img/images.jpeg);
+}
+
+.miclase:first-line{
+    font-size: 30px;
+    color: red;
+}
+
+.i {
+    display: block;
+}
+
+@font-face {
+    font-family: jose;
+    src: url(/css/Bebas_Neue/BebasNeue-Regular.ttf)
+}
+
+.miclase{
+    font-family: jose;
+}
